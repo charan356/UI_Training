@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("fname");
+            x.value = x.value.toUpperCase();
+        }
+
+
+        function myFunctionOnFocux(x) {
+            x.style.background = "yellow";
+        }
+
+
+    </script>
+</head>
+<body>
+
+Enter your name: <input type="text" id="fname" onblur="myFunction()">
+Enter your name: <input type="text" id="fname1" onchange="myFunction()">
+
+Enter your name_on focus: <input type="text" onfocus="myFunctionOnFocux(this)">
+
+
+<!--<input type="text" onkeydown="myFunction()">-->
+<!--<input type="text" onkeypress="myFunction()">-->
+<!--<input type="text" onkeypress="myFunction()">-->
+
+<!--<input-->
+        <!--type="text"-->
+        <!--onkeydown="color('yellow')"-->
+        <!--onkeyup="color('white')"-->
+        <!--name="myInput">-->
+
+
+
+<form onsubmit="confirmInput()" action="http://www.w3schools.com/">
+    Enter your name: <input id="fname2" type="text" size="20">
+    <input type="submit">
+</form>
+
+
+<script>
+function confirmInput() {
+fname = document.forms[0].fname2.value;
+alert("Hello " + fname + "! You will now be redirected to www.w3Schools.com");
+}
+</script>
+
+
+
+</body>
+</html>
