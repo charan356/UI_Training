@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example - example-example32-production</title>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+
+
+</head>
+<body ng-app="myapp">
+
+<!--<welcome></welcome>-->
+<welcome></welcome>
+<div welcome></div>
+<div class="welcome"></div>
+<script>
+//    angular.module('myapp', [])
+//            .directive("welcome", function () {
+//                return {
+//                    restrict: "E",
+//                    template: "<div>Howdy there! You look splendid.</div>"
+//                }
+//            });
+angular.module('myapp', [])
+            .directive("welcome", function () {
+                return {
+                    restrict: "ACE",
+                    template: "<div>Howdy there! You look splendid.</div>"
+//                    link : function(){
+//                        alert("howdy");
+//                    }
+                }
+            });
+
+
+
+</script>
+</body>
+</html>

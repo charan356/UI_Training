@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+           // $("p").hide();
+
+            $("button").click(function(){
+                $(".contentDiv").each( function(index, element) {
+
+
+                    $(element).css("background-color", "#646464");
+                    //$("p :odd").css("background-color", "yellow");
+                });
+
+            });
+
+        });
+    </script>
+</head>
+<body>
+
+<p>This is a paragraph.</p>
+
+<div class="contentDiv">
+    <p>hello wold11</p>
+    <p>hello wold11</p>
+    <p>hello wold11</p>.......................
+    <p>hello wold11</p>
+    <p>hello wold11</p>
+    <p>hello wold11</p>
+    <p>hello wold11</p>
+    <p>hello wold11</p>
+</div>
+
+<button>Show</button>
+
+
+
+
+
+</body>
+</html>
+
+
+
+<!--
+hw2) show the paragraph on the button click-->

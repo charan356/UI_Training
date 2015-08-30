@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("p").click(function(){
+
+            });
+        });
+
+        var target = document.getElementById( "target" );
+
+        target.innerHTML = "<td>Hello <b>World</b>!</td>";
+
+        // Setting the inner HTML with jQuery.
+        var target = document.getElementById( "target" );
+        $( target ).html( "<td>Hello <b>World</b>!</td>" );
+
+
+        // Inserting a new element after another with the native DOM API.
+        var target = document.getElementById( "target" );
+        var newElement = document.createElement( "div" );
+        target.parentNode.insertBefore( newElement, target.nextSibling );
+
+
+
+        // Selecting only the first <h1> element on the page (in a jQuery object)
+
+        var headings = $( "h1" );
+
+        var firstHeading = headings.eq( 0 );
+        var firstHeadingElem = $( "h1" )[ 0 ];
+
+        // Selecting only the first <h1> element on the page.
+
+        var firstHeadingElem = $( "h1" ).get( 0 );
+
+
+
+        var theDiv = $("#theDiv");
+        $("#theDiv").addClass("newCssClass");
+
+        $("#theDiv").addClass("newCssClass")
+                .css("border", "1px solid #cccccc")
+                .css("background-color", "#f0f0f0")
+        ;
+
+
+        $(".contentDiv").each( function(index, element) {
+
+            $(element).css("background-color", "#ffaaaa");
+        });
+
+        $(".contentDiv").each( function(index) {
+
+            $(this).css("background-color", "#ffaaaa");
+        });
+
+        $(".contentDiv").first().css("background-color", "#ffaaaa");
+
+        $(".contentDiv").last().css("background-color", "#ffaaaa");
+
+        var firstDiv = $(".contentDiv").first()
+
+        firstDiv.next().css("background-color", "#ffaaaa");
+
+
+
+        var lastDiv = $(".contentDiv").last()
+
+        lastDiv.prev().css("background-color", "#ffaaaa");
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+div class="contentDiv"> Div</div>
+<div class="contentDiv"> Div</div>
+<div class="contentDiv"> Div</div>
+<p>If you click on me, I will disappear.</p>
+
+</body>
+</html>
+
+
+<!--question 1) hide the paragraph on the click and speed should be slow-->

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#btnAppend').click(function(){
+                var b='<button id="btnRemove" type="button">Remove Task</button>'
+                var p = '<div>' +$('#test').val() + b +'</div>'
+                $('.taskList').append(p);
+            })
+
+            $(document).on({
+                click: function (e) {
+                    $(this).parent("div").remove();
+                }
+            }, '#btnRemove');
+
+
+
+
+
+        });
+    </script>
+</head>
+<body>
+
+<section>
+    <div class="container-fluid">
+
+        <label for="test">Todo List</label>
+        <input type="text" id="test" placeholder="todo items">
+        <button id="btnAppend">Append task to list</button>
+
+        <div class="taskList"></div>
+    </div>
+</section>
+
+
+</body>
+</html>
