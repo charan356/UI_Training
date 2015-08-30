@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body ng-app="myApp">
+<div class="container">
+
+    <div ng-controller="ServiceController">
+        <label for="userName">Type in GitHub username</label>
+        <input type="text" id="userName" ng-model="username" placeholder="Enter a GitHub username, like auser"/>
+        <pre>{{events |json}}</pre>
+
+    </div>
+
+
+</div>
+
+</body>
+</html>
