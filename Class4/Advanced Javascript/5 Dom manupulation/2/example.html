@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Enter names in the fields, then click "Submit" to submit the form:</p>
+
+<form id="frm1" action="form_action.asp">
+    First name: <input type="text" name="fname"><br>
+    Last name: <input type="text" name="lname"><br><br>
+    Email address : <input type="text" name="email_address"/>
+
+    <input type="button" onclick="myFunction()" value="Submit">
+    <input type="button" onclick="resetForm()" value="Reset">
+</form>
+
+<p id="demo"></p>
+<button onclick="printAllElements()">Print all elements</button>
+
+
+
+
+<!--disabling and enabling the list-->
+
+<form>
+    <select id="mySelect">
+        <option>Apple</option>
+        <option>Pear</option>
+        <option>Banana</option>
+        <option>Orange</option>
+    </select>
+    <br><br>
+    <input type="button" onclick="disable()" value="Disable list">
+    <input type="button" onclick="enable()" value="Enable list">
+    <input type="button" onclick="selectedElementInList()" value="Selected Element in the list.">
+</form>
+<script>
+
+    function selectedElementInList(){
+        var obj = document.getElementById("mySelect");
+        document.getElementById("demo").innerHTML =
+                obj.options[obj.selectedIndex].text;
+    }
+
+
+    function disable() {
+        var x = document.getElementById("mySelect").length;
+        document.getElementById("mySelect").disabled=true;
+    }
+    function enable() {
+        document.getElementById("mySelect").disabled=false;
+    }
+</script>
+
+
+
+
+
+<script>
+    function myFunction() {
+        document.getElementById("frm1").submit();
+    }
+
+    function resetForm() {
+        document.getElementById("frm1").reset();
+    }
+
+
+    function printAllElements() {
+        var x = document.getElementById('frm1');
+        var text = "";
+        var i;
+        for (i = 0; i < x.length; i++) {
+            text += x.elements[i].value + "<br>";
+        }
+        document.getElementById("demo").innerHTML = text;
+    }
+
+
+</script>
+
+</body>
+</html>

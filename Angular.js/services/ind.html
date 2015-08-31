@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<script src="angular.min.js"></script>
+<script src="index.js"></script>
+<body ng-app="myApp">
+<div class="container">
+    <div>
+        {{name}}
+        <div ng-controller="CalculatorController">
+            {{name}}
+            <br/>
+            <div></div>
+            Enter a number:
+            <input type="number" ng-model="number">
+            <button ng-click="findSquare()">Square</button>
+            <div>{{answer}}</div>
+
+            <br/>
+            Enter Name:
+            <input ng-model="name">
+            <button  ng-click="findReverse(name)">Reverse Name</button>
+            <div>{{reversename}}</div>
+
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

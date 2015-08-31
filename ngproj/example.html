@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en" ng-app="phonecatApp">
+<head>
+  <meta charset="utf-8">
+  <title>Google Phone Gallery</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/animations.css">
+
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="js/angularApp.js"></script>
+  <script src="js/controller/controller.js"></script>
+
+</head>
+<!--<body ng-controller="PhoneListCtrl">-->
+<body>
+
+<div ng-view></div>
+
+<!--<ul>-->
+  <!--<li ng-repeat="phone in phones">-->
+    <!--<span>{{phone.name}}</span>-->
+    <!--<p>{{phone.snippet}}</p>-->
+  <!--</li>-->
+<!--</ul>-->
+
+<!--<div class="container-fluid">-->
+  <!--<div class="row">-->
+    <!--<div class="col-md-2">-->
+      <!--&lt;!&ndash;Sidebar content&ndash;&gt;-->
+
+      <!--Search: <input ng-model="query">-->
+
+    <!--</div>-->
+    <!--<div class="col-md-10">-->
+      <!--&lt;!&ndash;Body content&ndash;&gt;-->
+
+      <!--<ul class="phones">-->
+        <!--<li ng-repeat="phone in phones | filter:query">-->
+          <!--{{phone.name}}-->
+          <!--<p>{{phone.snippet}}</p>-->
+        <!--</li>-->
+      <!--</ul>-->
+
+    <!--</div>-->
+  <!--</div>-->
+<!--</div>-->
+
+
+
+<!--Search: <input ng-model="query">-->
+<!--Sort by:-->
+<!--<select ng-model="orderProp">-->
+  <!--<option value="name">Alphabetical</option>-->
+  <!--<option value="age">Newest</option>-->
+<!--</select>-->
+
+
+<!--&lt;!&ndash;<ul class="phones">&ndash;&gt;-->
+  <!--&lt;!&ndash;<li ng-repeat="phone in phones | filter:query | orderBy:orderProp">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;&lt;!&ndash;{{phone}}&ndash;&gt;&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<span>{{phone.name}}</span>&ndash;&gt;-->
+    <!--&lt;!&ndash;<p>{{phone.snippet}}</p>&ndash;&gt;-->
+
+  <!--&lt;!&ndash;</li>&ndash;&gt;-->
+<!--&lt;!&ndash;</ul>&ndash;&gt;-->
+
+<!--<ul class="phones">-->
+  <!--<li ng-repeat="phone in phones | filter:query | orderBy:orderProp" class="thumbnail">-->
+    <!--<a href="#/phones/{{phone.id}}" class="thumb"><img ng-src="{{phone.imageUrl}}"></a>-->
+    <!--<a href="#/phones/{{phone.id}}">{{phone.name}}</a>-->
+    <!--<p>{{phone.snippet}}</p>-->
+  <!--</li>-->
+<!--</ul>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -10,8 +10,9 @@ router.get('/posts', function(req, res, next) {
   Post.find(function(err, posts){
     if(err){ return next(err); }
 
-    res.json(posts);
-  });
+    res.json(p
+
+
 });
 
 router.post('/posts', function(req, res, next) {
