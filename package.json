@@ -1,0 +1,22 @@
+{
+  "name": "exp2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sivaboyapati/UI_Training.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sivaboyapati/UI_Training/issues"
+  },
+  "homepage": "https://github.com/sivaboyapati/UI_Training#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}

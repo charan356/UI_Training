@@ -1,0 +1,15 @@
+npm --version
+
+sudo npm install npm -g
+
+npm install <Module Name>
+
+npm install express
+
+npm uninstall express
+
+npm ls
+
+npm update express
+
+npm search express
