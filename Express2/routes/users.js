@@ -15,7 +15,11 @@ var Cat = mongoose.model('Cat', _cat);
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
+
   Cat.find({}, function (err, docs) {
+      if(err){
+          throw err;
+      }
     res.json(docs);
   });
 
